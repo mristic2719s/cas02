@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela i forma</title>
+</head>
+<body>
+    <style>
+        table ,td,tr {
+            border-collapse: collapse;
+            border:2px solid green;
+            border-style: solid;
+        }
+        
+        #drugi_red{
+            background-color: lightgreen;
+            color: red;
+            text-align: center;    
+        }
+        .forma{
+            border: 5px solid green;
+            width: 500px;
+            padding-left: 30px;
+            padding-right: 30px;
+            
+            padding-bottom: 40px;
+            padding-top: 40px;
+            
+            
+        }
+        label,input {
+          
+            
+            display:block;
+            padding: 0px;
+            margin: 0px;
+          
+            
+        }
+        label {
+            text-align: justify;
+        }
+        
+
+    </style>
+
+    <table >
+        
+    <tr id="prvi_red">
+        <td style="text-align: center;" bgcolor="skyblue">
+           <b> Ime </b>
+        </td>
+        <td  style="text-align: right;" bgcolor="yellow">
+           <b> Prezime </b>
+        </td>
+        <td style="text-align: left;" bgcolor="lightgreen">
+            <b>JMBG </b>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="skyblue">Marko</td>
+        <td bgcolor="yellow">Markovic</td>
+        <td bgcolor="lightgreen">130599522311</td>
+    </tr>
+    <tr id="drugi_red">
+        <td>Darko</td>
+        <td style="text-align: right;">Petrovic</td>
+        <td>130599535621</td>
+    </tr>
+    <tr>
+        <td style="text-align: center;" bgcolor="skyblue">Stefan</td>
+        <td style="text-align: right;" bgcolor="yellow">Milicic</td>
+        <td bgcolor="lightgreen">130599365321</td>
+    </tr>
+
+    </table>
+    <br>
+<form class="forma">
+    <label for="name">Ime</label>
+    <input type="text" name="name" placeholder="Unesite vase ime">
+    
+    <label for="prezime">Prezime</label>
+    <input type="text" name="prezime" placeholder="Unesite vase prezime">
+    
+    <label for="jmbg">JMBG</label>
+    <input type="text" name="jmbg" placeholder="Unesite vas JMBG">
+    
+    <input type="submit" value="Unesi">
+</form>
+
+<form class="forma2" >
+    <label for="name">Ime</label>
+    <input type="text" name="name" placeholder="Unesite vase ime">
+    
+    <label for="prezime">Prezime</label>
+    <input type="text" name="prezime" placeholder="Unesite vase prezime">
+    
+    <label for="jmbg">JMBG</label>
+    <input type="text" name="jmbg" placeholder="Unesite vas JMBG">
+    
+    <input type="submit" value="Unesi">
+</form>
+</body>
+</html>
